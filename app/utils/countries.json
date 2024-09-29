@@ -6,163 +6,190 @@
         "id": 1,
         "abbreviation": "USA",
         "name": "American",
-        "image": "https://jmp.sh/6qXLssa2"
+        "image": "/flags/usa.png",
+        "geo": "United States of America (the)"
       },
       {
         "id": 2,
         "abbreviation": "Italy",
         "name": "Italian",
-        "image": "https://jmp.sh/J9UWOjGT"
+        "image": "/flags/italy.png",
+        "geo": "Italy"
       },
       {
         "id": 3,
         "abbreviation": "Mexico",
         "name": "Mexican",
-        "image": "https://jmp.sh/oLzNFgXn"
+        "image": "/flags/mexico.png",
+        "geo": "Mexico"
       },
       {
         "id": 4,
         "abbreviation": "Japan",
         "name": "Japanese",
-        "image": "https://jmp.sh/cJQYVetk"
+        "image": "/flags/japan.png",
+        "geo": "Japan"
       },
       {
         "id": 5,
         "abbreviation": "France",
         "name": "French",
-        "image": "https://jmp.sh/Ewvh7Tkq"
+        "image": "/flags/france.png",
+        "geo": "France"
       },
       {
         "id": 6,
         "abbreviation": "Canada",
         "name": "Canadien",
-        "image": "https://jmp.sh/j2KGqMs2"
+        "image": "/flags/canada.png",
+        "geo": "Canada"
       },
       {
         "id": 7,
         "abbreviation": "Jamaica",
         "name": "Jamaican",
-        "image": "https://jmp.sh/7MZiqFsw"
+        "image": "/flags/jamaica.png",
+        "geo": "Jamaica"
       },
       {
         "id": 8,
         "abbreviation": "China",
         "name": "Chinese",
-        "image": "https://jmp.sh/O5lWU1O2"
+        "image": "/flags/china.png",
+        "geo": "China"
       },
       {
         "id": 9,
         "abbreviation": "Netherlands",
         "name": "Dutch",
-        "image": "https://jmp.sh/ELBGAgAW"
+        "image": "/flags/netherlands.png",
+        "geo": "Netherlands (Kingdom of the)"
       },
       {
         "id": 10,
         "abbreviation": "Egypt",
         "name": "Egyptian",
-        "image": "https://jmp.sh/x6pqHyoO"
+        "image": "/flags/egypt.png",
+        "geo": "Egypt"
       },
       {
         "id": 11,
         "abbreviation": "Greece",
         "name": "Greek",
-        "image": "https://jmp.sh/CsvebCjC"
+        "image": "/flags/greece.png",
+        "geo": "Greece"
       },
       {
         "id": 12,
         "abbreviation": "India",
         "name": "Indian",
-        "image": "https://jmp.sh/iRbz42yc"
+        "image": "/flags/india.png",
+        "geo": "India"
       },
       {
         "id": 13,
         "abbreviation": "Ireland",
         "name": "Irish",
-        "image": "https://jmp.sh/AJjHBelY"
+        "image": "/flags/ireland.png",
+        "geo": "Ireland"
       },
       {
         "id": 14,
         "abbreviation": "Kenya",
         "name": "Kenyan",
-        "image": "https://jmp.sh/uMjTDlLI"
+        "image": "/flags/kenya.png",
+        "geo": "Kenya"
       },
       {
         "id": 15,
         "abbreviation": "Malaysia",
         "name": "Malaysian",
-        "image": "https://jmp.sh/4M9t7ejs"
+        "image": "/flags/malaysia.png",
+        "geo": "Malaysia"
       },
       {
         "id": 16,
         "abbreviation": "Morocco",
         "name": "Moroccan",
-        "image": "https://jmp.sh/oCfeE1Q6"
+        "image": "/flags/morocco.png",
+        "geo": "Morocco"
       },
       {
         "id": 17,
         "abbreviation": "Croatia",
         "name": "Croatian",
-        "image": "https://jmp.sh/m8W867cn"
+        "image": "/flags/croatia.png",
+        "geo": "Croatia"
       },
       {
         "id": 18,
         "abbreviation": "Poland",
         "name": "Polish",
-        "image": "https://jmp.sh/LglIEgFb"
+        "image": "/flags/poland.png",
+        "geo": "Poland"
       },
       {
         "id": 19,
         "abbreviation": "Portugal",
         "name": "Portugese",
-        "image": "https://jmp.sh/kosonPP5"
+        "image": "/flags/portugal.png",
+        "geo": "Portugal"
       },
       {
         "id": 20,
         "abbreviation": "Russia",
         "name": "Russian",
-        "image": "https://jmp.sh/H5TVUxjY"
+        "image": "/flags/russia.png",
+        "geo": "Russian Federation (the)"
       },
       {
         "id": 21,
         "Abbreviation": "Spain",
         "name": "Spanish",
-        "image": "https://jmp.sh/k7yP82YC"
+        "image": "/flags/spain.png",
+        "geo": "Spain"
       },
       {
         "id": 22,
         "abbreviation": "Thailand",
         "name": "Thai",
-        "image": "https://jmp.sh/FgCOoxDX"
+        "image": "/flags/thailand.png",
+        "geo": "Thailand"
       },
       {
         "id": 23,
         "abbreviation": "Tunisia",
         "name": "Tunisian",
-        "image": "https://jmp.sh/HuY6TLGm"
+        "image": "/flags/tunisia.png",
+        "geo": "Tunisia"
       },
       {
         "id": 24,
         "abbreviation": "Turkey",
         "name": "Turkish",
-        "image": "https://jmp.sh/c5GdjFPT"
+        "image": "/flags/turkey.png",
+        "geo": "Turkiye"
       },
       {
         "id": 25,
         "abbreviation": "Ukraine",
         "name": "Ukrainian",
-        "image": "https://jmp.sh/JGrgQ6FH"
+        "image": "/flags/ukraine.png",
+        "geo": "Ukraine"
       },
       {
         "id": 26,
         "abbreviation": "Vietnam",
         "name": "Vietnamese",
-        "image": "https://jmp.sh/8wCZuYlH"
+        "image": "/flags/vietnam.png",
+        "geo": "Viet Nam"
       },
       {
         "id": 27,
         "abbreviation": "Philippines",
         "name": "Filipino",
-        "image": "https://jmp.sh/lDApEC7i"
+        "image": "/flags/philippines.png",
+        "geo": "Philippines (the)"
       }
     ]
   }

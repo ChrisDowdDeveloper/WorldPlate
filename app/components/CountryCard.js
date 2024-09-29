@@ -1,19 +1,25 @@
 import React from 'react'
 import Link from 'next/link';
+import Image from 'next/image';
 
 const CountryCard = ({ country }) => {
   return (
-    <li key={country.id}>
-        <Link href={`/recipes/${country.name.toLowerCase()}`}>
+    <div>
+      <li key={country.id}>
+          <Link href={`/recipes/${country.name.toLowerCase()}`}>
+              <Image
+                src={country.image}
+                width={150}
+                height={50}
+                alt={`${country.abbreviation}'s flag`}
+                priority={true}
+                className="flag-image"
+              />
+
             {country.abbreviation}
-            <img 
-              src={country.image} 
-              width={50} 
-              height={50} 
-              alt={`${country.abbreviation}'s flag`} 
-            />
-        </Link>
-    </li>
+          </Link>
+      </li>
+    </div>
   )
 }
 
