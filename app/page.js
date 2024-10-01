@@ -2,14 +2,14 @@
 
 import { useEffect, useState } from "react";
 import countriesData from './utils/countries.json';
-import CountryCard from "./components/CountryCard";
-import RecipeCard from "./components/RecipeCard";
-import { fetchRecipes } from "./api/recipes";
+import CountryCard from "./components/cards/CountryCard";
+import { fetchMeals } from "./api/meals";
 import { fetchUserCountry } from "./api/geolocation";
+import MealsCard from "./components/cards/MealsCard";
 
 export default function Home() {
   const [userCountry, setUserCountry] = useState(null);
-  const [recipes, setRecipes] = useState(null);
+  const [meals, setMeals] = useState(null);
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(async(position) => {
@@ -23,31 +23,19 @@ export default function Home() {
       });
 
       if(foundCountry) {
-        const countryRecipes = await fetchRecipes(foundCountry.name);
-        setRecipes(countryRecipes);
+        const countryMeals = await fetchMeals(foundCountry.name);
+        setMeals(countryMeals);
       }
     })
   }, []);
 
-  //TODO - Turn this into a button
-  const getRandomMeal = async() => {
-    const randomCountry = countriesData.countries[Math.floor(Math.random() * countriesData.countries.length)];
-    const countryRecipes = await fetchRecipes(randomCountry.name);
-
-    if(countryRecipes && countryRecipes.length > 0) {
-      const randomMeal = countryRecipes[Math.floor(Math.random() * countryRecipes.length)];
-
-      router.push(`/recipes/${randomCountry.name.toLowerCase()}/${randomMeal.strMeal.toLowerCase()}`);
-    }
-  }
-
   return (
     <div>
       <h2>Select a Country to explore popular recipes!</h2>
-      {recipes ? (
+      {meals ? (
         <ul>
-          {recipes.map(recipe => (
-            <RecipeCard key={recipe.idMeal} recipe={recipe} />
+          {meals.map(meal => (
+            <MealsCard key={meal.idMeal} meal={meal} />
           ))}
         </ul>
       ) : (

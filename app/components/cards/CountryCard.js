@@ -6,7 +6,7 @@ const CountryCard = ({ country }) => {
   return (
     <div>
       <li key={country.id}>
-          <Link href={`/recipes/${country.name.toLowerCase()}`}>
+          <Link href={`/${country.name.toLowerCase()}`}>
               <Image
                 src={country.image}
                 width={150}
