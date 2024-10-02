@@ -11,11 +11,11 @@ export default async function MealPage({ params }) {
     }
     return (
         <div>
-            <ul>
-                {meals.map(meal => (
-                    <RecipeCard key={meal.idMeal} meal={meal} />
-                ))}
-            </ul>
+                <ul>
+                    {meals.map(meal => (
+                        <RecipeCard key={meal.idMeal} meal={meal} />
+                    ))}
+                </ul>
         </div>
     )
 }

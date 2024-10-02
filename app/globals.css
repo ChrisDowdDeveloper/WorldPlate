@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #E0E0E0;
   --foreground: #171717;
 }
 
@@ -29,4 +29,12 @@ body {
 .flag-image {
   width: auto;
   height: auto;
+}
+
+button {
+  background-color: #ffde7d;
+}
+
+p {
+  background-color: #333333;
 }

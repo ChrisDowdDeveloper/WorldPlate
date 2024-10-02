@@ -37,7 +37,7 @@ const Header = () => {
 
 const headerStyle = {
   padding: '10px',
-  background: '#333',
+  background: 'none',
   color: '#fff',
   textAlign: 'center'
 };
@@ -52,13 +52,13 @@ const navListStyle = {
 const linkStyle = {
   margin: '0 15px',
   textDecoration: 'none',
-  color: '#fff',
+  color: '#333333',
 };
 
 const linkButtonStyle = {
   background: 'none',
   border: 'none',
-  color: '#fff',
+  color: '#333333',
   cursor: 'pointer',
   textDecoration: 'underline',
 };
