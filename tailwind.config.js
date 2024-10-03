@@ -10,8 +10,9 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "warm-orange": '#d54431',
       },
     },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 };
