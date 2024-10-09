@@ -2,65 +2,24 @@
 
 import Link from 'next/link';
 import React from 'react';
-import countriesData from '../../utils/countries.json'
-import { fetchMeals } from '../../api/meals';
-import { useRouter } from 'next/navigation';
 
 const Header = () => {
-  const router = useRouter();
-
-  const getRandomMeal = async () => {
-    const randomCountry = countriesData.countries[Math.floor(Math.random() * countriesData.countries.length)];
-    const countryMeals = await fetchMeals(randomCountry.name);
-
-    if (countryMeals && countryMeals.length > 0) {
-      const randomRecipe = countryMeals[Math.floor(Math.random() * countryMeals.length)];
-      router.push(`/${randomCountry.name.toLowerCase()}/${randomRecipe.strMeal.toLowerCase()}`);
-    }
-  };
 
   return (
-    <header style={headerStyle}>
-      <nav>
-        <ul style={navListStyle}>
-          <li><Link href="/" style={linkStyle}>Home</Link></li>
-          <li>
-            <button style={linkButtonStyle} onClick={getRandomMeal}>
-              Get Random Meal
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <nav className="p-4">
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="text-white text-xl font-bold">
+          <a href="/">World Plates</a>
+        </div>
+        <div className="space-x-4">
+          <a href="/" className="text-white hover:text-warm-orange">Home</a>
+          <a href="/countries" className="text-white hover:text-warm-orange">Countries</a>
+        </div>
+      </div>
+    </nav>
+  
   );
 };
 
-const headerStyle = {
-  padding: '10px',
-  background: 'none',
-  color: '#fff',
-  textAlign: 'center'
-};
-
-const navListStyle = {
-  display: 'flex',
-  justifyContent: 'center',
-  listStyle: 'none',
-  padding: 0,
-};
-
-const linkStyle = {
-  margin: '0 15px',
-  textDecoration: 'none',
-  color: '#333333',
-};
-
-const linkButtonStyle = {
-  background: 'none',
-  border: 'none',
-  color: '#333333',
-  cursor: 'pointer',
-  textDecoration: 'underline',
-};
 
 export default Header;
